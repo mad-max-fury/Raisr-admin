@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="Admin.css">
+  <title>Admin</title>
+</head>
+
+<body>
+  <main>
+    <div class="row">
+      <div class="header">
+        <h3>Admin</h3>
+        <div class="info">
+          <div class="alertIcon"><i class="fas fa-bell"></i></div>
+          <div class="calender"><i class="far fa-calendar-alt"></i></div>
+          <div class="date">
+            <div class="month" id="month">jan</div>
+            <div class="day" id="day">23</div>,
+            <div class="year" id="year">2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <button id="fundRaiser"><i class="fas fa-th-large"></i>Fundraiser</button>
+      <button id="accounts"> <img src="images/Vector.svg" alt="" srcset=""> Account</button>
+    </div>
+    <div class="account-list">
+      <div class="items">
+        <div class="action-switch">
+          <div>
+            <div class="Approval active" id="Approval">Approval</div>
+            <div class="Security" id="Security">Security</div>
+          </div>
+        </div>
+        <div class="items-list">
+          <div class="item-container">
+            <div class="inner-item-container ">
+              <div class="title">New fundraiser account</div>
+              <div class="table-data">
+                <div class="table-header">
+                  <div>Name</div>
+                  <div>Campaigne</div>
+                  <div>Amount</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>status</div>
+                </div>
+                <div class="table-body" id="table-body">
+                  <!-- <div class="body-item1">
+                    <div>Nicolas</div>
+                    <div>surgery</div>
+                    <div>#17,500</div>
+                    <div>May 3rd, 2021</div>
+                    <div>May 23rd, 2021</div>
+                    <div><button class="disable" id="disable">Disable</button><button class="enable"
+                        id="enable">Enable</button></div>
+                  </div> -->
+                </div>
+                <div class="loadMore">
+                  <button>Load more</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="inner-item-security">
+              <div class="titleS">
+                <h3>New fundraiser account</h3>
+                <div class="sort">
+                  <select name="" id="oldNew">
+                    <option value="old">old</option>
+                    <option value="New">New</option>
+                  </select>
+                  <select name="" id="yearMonWe">
+                    <option value="year">This year</option>
+                    <option value="month">This month</option>
+                    <option value="year">This week</option>
+                    <option value="Pasweek">past week</option>
+                  </select>
+                </div>
+              </div>
+              <div class="account-container">
+                <div class="accountCard">
+                  <div class="accountInfo">
+                    <div class="avatar">
+                      <img src="images/Ellipse 18.png" alt="" srcset="">
+                    </div>
+                    <div class="name">
+                      <h3>Collins Robert</h3>
+                      <small id="id">
+                        (2020) sep13-52672(002)
+                      </small>
+
+                    </div>
+                    <div class="time">30min</div>
+                  </div>
+                  <div class="admin-action"><button id="Delete" class="Delete">Delete</button></div>
+                </div>
+              </div>
+              <div class="loadMore">
+                <button>Load more</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="admin.js"></script>
+
+</body>
+
+</html>

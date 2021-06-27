@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2);
+  /* grid-template-rows: repeat(2); */
+}
+.row {
+  /* border: 1px solid red; */
+  height: 10vh;
+  width: 100%;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  width: 90%;
+  /* border: 1px solid green; */
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+.date {
+  display: flex;
+  width: 6rem;
+  justify-content: space-evenly;
+}
+.column {
+  grid-column: span 1;
+  width: 10vw;
+  /* border: 1px solid yellow; */
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.column > button {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  background-color: rgb(238, 250, 244);
+  border: 0;
+  outline: 0;
+}
+#fundRaiser {
+  margin-top: 4rem;
+}
+.action-switch {
+  /* border: 1px solid black; */
+  padding-top: 1.5rem;
+  overflow: hidden;
+  display: flex;
+}
+.action-switch > div {
+  margin-left: 5rem;
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+}
+.account-list {
+  grid-column: span 1;
+  width: 90vw;
+  border: 3rem solid #cbd3e2;
+  border-bottom: 0;
+  border-top-left-radius: 2rem;
+  background-color: #cbd3e2;
+}
+.items {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.title {
+  font-size: 22px;
+}
+.items-list {
+  /* border: 1px solid yellow; */
+  height: 85%;
+}
+.item-container {
+  width: 92%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  /* border: 1px solid green; */
+}
+.inner-item-container {
+  width: 97%;
+  height: 100%;
+  /* border: 1px solid pink; */
+  margin-left: 5%;
+  display: block;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  width: 100%;
+  margin-top: 1%;
+  background-color: #f6f7f8;
+  align-items: center;
+  border-radius: 7px;
+  height: 3rem;
+}
+.table-header > div {
+  text-align: center;
+  font-size: 19px;
+}
+.table-body {
+  display: grid;
+  grid-template-columns: repeat(1);
+  /* border: 1px solid lemonchiffon; */
+  width: 100%;
+}
+.body-item1 {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  text-align: center;
+  font-size: 19px;
+}
+.disable {
+  background-color: rgb(254, 233, 235);
+  width: 76px;
+  height: 36px;
+  border-radius: 16px;
+  outline: 0;
+  border: 0;
+  color: #f89799;
+}
+.enable {
+  background-color: rgb(230, 246, 238);
+  width: 76px;
+  height: 36px;
+  border-radius: 16px;
+  outline: 0;
+  border: 0;
+  color: #8bd19d;
+}
+.loadMore {
+  width: 8rem;
+  background-color: #ffffff;
+  height: 2rem;
+  border: 1px solid gainsboro;
+  border-radius: 4.02px;
+}
+.loadMore > button {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: inherit;
+  background-color: inherit;
+}
+.inner-item-security {
+  width: 97%;
+  height: 100%;
+  /* border: 1px solid pink; */
+  margin-left: 5%;
+  display: none;
+}
+.titleS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sort {
+  /* border: 1px solid red; */
+  width: 25%;
+  height: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 1rem;
+}
+.sort select {
+  width: fit-content;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background: #fff;
+  border: 1px solid gainsboro;
+  border-radius: 4.02px;
+}
+.account-container {
+  height: 80%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+  border: 1px solid green;
+}
+.accountCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #eefaf4;
+  border-radius: 16px;
+}
+.date {
+  margin-right: 3rem;
+}
+.accountInfo {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.admin-action {
+  background-color: #fff;
+
+  border-radius: 6.02px;
+  height: 38px;
+  width: 80px;
+}
+.admin-action > button {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+}
+.active {
+  color: #8bd19d;
+  border-bottom: 1px solid #8bd19d;
+  width: 4rem;
+  height: 2rem;
+  transition: all;
+}
